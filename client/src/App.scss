@@ -68,6 +68,16 @@ input {
   display: flex;
   flex-direction: column;
 
+  .address {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: .9em;
+    display: inline-flex;
+    margin-top: 10px;
+    padding: 0.75rem;
+    background-color: #f4f6f8;
+  }
+
   .balance {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -83,4 +93,29 @@ input {
 .transfer {
   display: flex;
   flex-direction: column;
+}
+
+.ledger {
+  display: flex;
+  flex-direction: column;
+
+  .ledger-table{
+
+    border-collapse: collapse;
+    thead {border: #222;}
+
+    thead > tr{
+      border-bottom: 2px solid gray;
+    }
+    
+
+    td:nth-child(odd) {
+      background-color: white;
+    }
+    
+    td:nth-child(even) {
+      background-color: whitesmoke;
+    }
+  }
+
 }
